@@ -21,8 +21,13 @@ public class Main {
         System.out.println("input pris på varen");
         String varePris = sc.nextLine();
 
-        System.out.println("input moms i procent");
-        double moms = Double.parseDouble(sc.nextLine());
+        System.out.println("input statskode for moms");
+        String statsKode = sc.nextLine();
+        double moms = 0;
+        switch (statsKode.toUpperCase()) {
+            case "UT" -> moms = 6.85;
+            default -> moms = 64.10;
+        }
 
 
 
