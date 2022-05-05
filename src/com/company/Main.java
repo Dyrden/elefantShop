@@ -26,7 +26,11 @@ public class Main {
         double moms = 0;
         switch (statsKode.toUpperCase()) {
             case "UT" -> moms = 6.85;
-            default -> moms = 64.10;
+            case "NV" -> moms = 8.00;
+            case "TX" -> moms = 6.25;
+            case "AL" -> moms = 4.00;
+            case "CA" -> moms = 8.25;
+            default -> moms = 6.85;
         }
 
 
