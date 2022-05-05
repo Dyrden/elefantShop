@@ -21,9 +21,14 @@ public class Main {
         System.out.println("input pris på varen");
         String varePris = sc.nextLine();
 
+        System.out.println("input moms i procent");
+        double moms = Double.parseDouble(sc.nextLine());
+
+
+
         double totalpris = Integer.parseInt(antalVarer)*Double.parseDouble(varePris);
         System.out.println("totalpris uden moms: "+ totalpris + " USD");
-        System.out.printf("totalpris med moms (UT) af %s%% : %.2f USD" ,utahMoms,totalpris*(utahMoms/100+1));
+        System.out.printf("totalpris med moms af %s%% : %.2f USD" ,moms,totalpris*(moms/100+1));
     }
 
 }
